@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Free Fire Tournament Registration</title>
+    <style>
+        body {
+            background-image: url('https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/20246/f12ac65d0a2883b63639842a817c47b7.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: neon 1.5s infinite alternate;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.4), 0 0 40px rgba(255, 0, 0, 0.2);
+            -webkit-text-stroke: 1px black;
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            animation: fadeIn 2s;
+        }
+
+        label {
+            font-size: 18px;
+            margin: 10px 0;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffcc00;
+        }
+
+        input[type="text"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background: #ffcc00;
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #ff9900;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes neon {
+            0% {
+                text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 0, 0, 0.4), 0 0 20px rgba(255, 0, 0, 0.2);
+                color: #ffcc00;
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 0, 0, 0.6), 0 0 50px rgba(255, 0, 0, 0.4);
+                color: #ff6600;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Free Fire Tournament Registration</h2>
+    <form action="/submit_registration" method="post">
+        <label for="player1">Player 1 Name:</label>
+        <input type="text" id="player1" name="player1" required>
+        
+        <label for="player2">Player 2 Name:</label>
+        <input type="text" id="player2" name="player2" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <input type="submit" value="Register">
+        <audio autoplay loop>
+            <source src="free_fire.mp3" type="audio/mp3">
+            
+        </audio>
+    </form>
+</body>
+</html>
